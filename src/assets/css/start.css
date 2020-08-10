@@ -1,0 +1,19 @@
+.star {
+    display: block;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.star-wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.star .checked {
+    color: #ff7300;
+}
+
+.star .stars {
+    color: #4d545a;
+}

@@ -1,0 +1,144 @@
+.book-gallery {
+    box-shadow: 0 0 0 0 rgba(30, 53, 92, 0.2);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    background: #fff;
+    border: solid 1px #e6e6e6;
+    margin-bottom: 2rem;
+    min-height: 250px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    text-align: center;    
+    position: relative;
+}
+.book-gallery:hover {
+    transform: translate(0px, -0.2rem);
+    box-shadow: 0 5px 10px 0 rgba(30, 53, 92, 0.2);
+}
+
+.book-gallery .discription {
+    padding: 1rem;
+}
+
+.book-gallery .discription h3 a {
+    color: #021114;
+}
+
+.book-gallery .image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    -o-border-radius: 6px 6px 0 0;
+}
+
+.book-gallery .image:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background: #40bbff;
+    width: 0%;
+    height: 3px;
+    left: -3px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    z-index: 999;
+}
+.book-gallery:hover .image:before{
+    width: 100%;
+    left: 0;
+}
+
+.book-gallery .image .img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.25s, visibility 0.25s ease-in;
+    -webkit-transition: transform 0.25s, visibility 0.25s ease-in;
+    -moz-transition: transform 0.25s, visibility 0.25s ease-in;
+    -ms-transition: transform 0.25s, visibility 0.25s ease-in;
+    -o-transition: transform 0.25s, visibility 0.25s ease-in;
+    transform-origin: 0 0;
+}
+.book-gallery:hover .image .img {
+    transform: scale(1.1);
+}
+
+.book-gallery .buttons {
+    clear: both;
+    text-align: center;
+}
+
+/*
+*
+* ======================================================================
+* RIBBONS
+* ======================================================================
+*
+*/
+.ribbon {
+    position: absolute;
+    top: 50px;
+    padding-left: 59px;
+    z-index: 20;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    left: 0;
+}
+
+.ribbon .ribbon-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ribbon .theribbon {
+    position: relative;
+    width: 80px;
+    padding: 6px 20px 6px 20px;
+    margin: 30px 10px 10px -71px;
+    color: #fff;
+    background-color: #0382d8;
+}
+
+.ribbon .theribbon:before,
+.ribbon .theribbon:after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.ribbon .theribbon:after {
+    left: 0px;
+    top: 100%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #195d8b #195d8b transparent transparent;
+}
+
+.ribbon {
+    top: 0;
+}
+
+.ribbon + .ribbon {
+    margin-top: 50px;
+}
+
+.ribbon.new .theribbon {
+    background-color: #00d873;
+}
+
+.ribbon.new .theribbon:after {
+    border-color: #069452 #069452 transparent transparent;
+}
